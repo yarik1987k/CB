@@ -74,3 +74,15 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/ad
 ### Deployment 
 
 ### `yarn build` fails to minify 
+
+
+# Login
+/wp-admin
+User: admin
+Password: admin
+
+
+## Run Installer
+Put the files from the INSTALLER folder, in the main root of the host, installer.php and the zip file.
+from the browser run the installer https://YourDomain.com/installer.php and follow the steps.
+
