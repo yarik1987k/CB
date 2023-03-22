@@ -1,0 +1,165 @@
+.registration{
+    max-width: 400px;
+    margin: 0 auto;
+    font-family: 'Poppins';
+
+    &-title{
+        text-align: center;
+        h1{
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 30px;
+            color: #FFFFFF;
+            margin-bottom: 13px;
+        }
+        p{
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+            color: rgba(255, 255, 255, 0.35);
+        }
+    }
+
+    &-form{ 
+        max-width: 280px;
+        background: #37295A;
+        border-radius: 10px;
+        padding: 20px;
+        margin: 30px auto;
+
+        form{
+            .form-group{
+                margin-bottom: 14px;
+                input{
+                    padding: 8px 0px 8px 14px;
+                    width: 280px;
+                    height: 55px;
+                    background: #24213F;
+                    border-radius: 8px;
+                    color: #FFFFFF;
+                    border: none; 
+                    &::placeholder{
+                        color: rgba(255, 255, 255, 0.4);
+                    }
+                    &.requierd{
+                        &.error{
+                            border:1px solid red;
+                            transition: all ease-in-out 0.3s;
+                        }
+                    }
+                }
+                .btn-primary{
+                    cursor: pointer;
+                    padding: 10px 20px; 
+                    width: 280px;
+                    height: 46px; 
+                    background: linear-gradient(270.15deg, #7F53E6 0.13%, #9280DB 118.82%);
+                    border-radius: 8px;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 21px;
+                }
+            }
+        }
+    }
+    .privacy{
+        text-align: center;
+        p{
+            color: #FFFFFF;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 18px;
+            a{
+                color: #4497B0;
+                text-decoration-line: underline;
+            }
+        }
+    }
+    .passwordStrength{
+        padding-top: 0;
+
+        opacity: 0;
+        transition: all ease-in-out 0.3s;
+        max-height: 0;
+        
+
+        .password-text{
+            display: flex;
+            align-items: center;
+            padding-top: 10px;
+            .label{
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: -0.01em;
+                color:#fff;
+            }
+            .icon{
+                margin-right: 10px;
+            }
+        }
+        .holder-strength{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            span{
+                height: 4px;
+                border-radius: 16px;
+                width: 66px;
+                display: inline-block;
+                background: #fff;
+            }
+           
+        }
+ 
+        &--red{
+            .holder-strength{
+                span{
+                    &:nth-child(1){
+                        background: red;
+                    }
+                }
+            }
+        }
+        &--orange{
+            .holder-strength{
+                span{
+                    &:nth-child(1),
+                    &:nth-child(2){
+                        background: orange;
+                    }
+                }
+            }
+        }
+        &--green-light{
+            .holder-strength{
+                span{
+                    &:nth-child(1),
+                    &:nth-child(2),
+                    &:nth-child(3){
+                        background: rgb(37, 238, 44);
+                    }
+                }
+            }
+        }
+        &--green{
+            .holder-strength{
+                span{
+                    &:nth-child(1),
+                    &:nth-child(2),
+                    &:nth-child(3),
+                    &:nth-child(4){
+                        background: rgb(1, 121, 5);
+                    }
+                }
+            }
+        }
+
+        &.active{
+            opacity: 1;
+            transition: all ease-in-out 0.3s;
+            max-height: initial;
+            padding-top: 10px;
+        }
+    }
+}

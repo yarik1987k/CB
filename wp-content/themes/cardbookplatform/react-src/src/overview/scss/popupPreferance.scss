@@ -1,0 +1,173 @@
+.preferance-popup{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    position: fixed;
+    top: 20%;
+    width: 700px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    &--header{
+        background: #FAFBFC;
+        border-radius: 10px 10px 0px 0px;     
+        display: flex;
+        align-items: center;
+        justify-content: space-between;  
+
+        .close-popup{
+            position: absolute;
+            right: 5px;
+            top: 10px;
+            button{
+                background: transparent;
+                border: none;
+            }
+        }
+    &--image{
+        padding:10px 0 0 40px;
+        figure{
+            margin:0;
+
+        }
+    }
+    &--content{
+        padding: 0 40px;
+        h3{
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 27px;
+            color: #271D43;
+            margin: 0;
+        }
+        p{
+            margin: 0;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+            color: #271D43;
+            padding-top: 15px;
+        }
+    }
+
+    }
+
+    &--content-block{
+        padding: 30px 40px;
+        h3{
+            margin: 0;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 21px;
+            color: #271D43;
+            padding-bottom: 22px;
+        }
+        .industries-block{
+            
+            
+        }
+    }
+
+    .block-options{
+        .btn{
+            &-choose{
+                border: 2px solid rgba(139, 123, 236, 0.5);
+                border-radius: 40px;
+                display: inline-flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                padding: 8px 10px;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 18px;
+                color: #51378E;
+                background: #FFFFFF;
+                margin: 4px 4px;
+                cursor: pointer;
+                transition: all ease-in-out 0.3s;
+                &.active{
+                    background:#51378E;
+                    color: #fff;
+                    transition: all ease-in-out 0.3s;
+                }
+            }   
+        }
+
+        .radio-buttons{
+            label{
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 21px;
+                color: #271D43;
+                cursor: pointer;
+                margin-right: 30px;
+                input[type="radio"] {
+                    appearance: none;
+                    background-color: #fff;
+                    margin: 0;
+                    font: inherit;
+                    color: #271D43;
+                    width: 16px;
+                    height: 16px;
+                    border: 1px solid #271D43;
+                    border-radius: 50%;
+                    display: inline-grid;
+                    place-content: center;
+                    margin-right: 7px; 
+
+                    &::before{
+                        content: "";
+                        width: 10px;
+                        height: 10px;
+                        border-radius: 50%;
+                        transform: scale(0);
+                        transition: 120ms transform ease-in-out;
+                        box-shadow: inset 1em 1em #7F53E5;
+                    }
+                    &:checked{
+                        border-color: #7F53E5;
+                        &::before{
+                            transform: scale(1);
+                        }
+                    }
+                  }
+            }
+            &-list{
+                label{
+                    display: block;
+                    margin-bottom: 17px;
+                }
+            }
+        }
+    }
+    .block-button{
+        text-align: center;
+        margin-top: 40px;
+        .btn{
+            &-primary,
+            &-secondary{
+                background: linear-gradient(270.15deg, #7F53E6 0.13%, #9280DB 118.82%);
+                border-radius: 8px;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                padding: 10px 20px;
+                width: 256px;
+                height: 46px;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 21px;
+                color: #FFFFFF;
+                border: none;
+                cursor: pointer;
+            }
+            &-secondary{
+                color: #271D43;
+                border:2px solid  #7F53E5;
+                background: transparent;
+                margin-right: 20px;
+            }
+        }
+    }
+}

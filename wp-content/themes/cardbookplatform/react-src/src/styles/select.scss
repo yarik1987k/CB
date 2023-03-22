@@ -1,0 +1,172 @@
+.custom-select {
+    &__filter-search{
+        padding: 10px;
+    }
+   &__options{
+    background: #4E3E79;
+    border-radius: 8px;
+    margin-top:10px;
+    position: absolute;
+    z-index: 9;
+    &::-webkit-scrollbar-thumb{
+        background: #FFFFFF;
+        border-radius: 23px;
+        width: 3px;
+    }
+    &::-webkit-scrollbar-track{
+        background: #362A57;
+        border-radius: 23px;
+        width: 3px;
+    }
+
+
+
+    ul{
+        padding: 10px 0 20px 0;
+        margin: 0;
+        list-style: none; 
+        overflow: scroll;
+        height:100%;
+        max-height: 0;
+        li{
+            
+            cursor: pointer;
+            button{
+                width: 100%;
+                text-align: left;
+                padding: 0;
+                margin: 0;
+                background: transparent;
+                color: #fff;
+                border: none;
+                cursor: pointer;
+                padding:10px 20px;
+            }
+            &:hover{
+                background: #45366C;
+            }
+        }
+        
+    }
+    &.active{
+        ul{
+            max-height: 300px;
+        }
+    }
+   }
+    
+    &__input{
+        position: relative;
+
+        input{
+            cursor: pointer;
+            &:focus-visible{
+                outline: none;
+            }
+            color: rgba(255, 255, 255, 0.2) !important;
+            &.active{
+                color:#fff !important;
+            }
+        }
+        button{
+            padding:0;
+            border:none;
+            margin:0;
+            background: transparent;
+            cursor: pointer;
+            height:41px;
+            width:41px;
+            position: absolute;
+            right: 0;
+            top:0;
+            svg{
+                transition: all ease-in-out 0.2s;
+            }
+            &.active{
+                svg{
+                    transition: all ease-in-out 0.2s;
+                    transform: rotate(-180deg);
+                }
+            }
+        }
+    }
+    &-multipule{
+        ul{
+            li{
+                &.selected{
+                    background: #45366C;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 21px;
+                   button{
+                    
+                   } 
+                }
+            }
+        }
+        &.active{
+
+        }
+        .custom-select__input{
+            position: relative;
+            background: #291E47;
+            border-radius: 8px;
+            padding: 10px 6px 10px 6px;
+            button{
+                width: 30px;
+                height: 30px;
+                top: 8px;
+            }
+
+        }
+        &__selected-items{
+            padding: 0px; 
+            max-width: 210px;
+            margin: 0 auto;
+            height: 25px;
+            overflow: scroll;
+            .defualt{
+                color: rgba(255, 255, 255, 0.2);
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 21px;
+                height: 100%;
+                display: flex;
+                align-items: center;
+            }
+            &.active{
+                height: auto;
+                max-height: 150px;
+            }
+            .selected-item{ 
+                position: relative;
+                background: #8B7BEC;
+                border-radius: 30px;
+                display: inline-flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                padding: 4px 10px;  
+                margin: 4px 4px;
+                
+                p{
+                    margin:0;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 13px;
+                    line-height: 20px;
+                }
+                button{
+                    width: initial;
+                    height: initial;
+                    display: block;
+                    position: initial;
+                    color:#fff;
+                    margin-left: 7px;
+                }
+            }
+        }
+    }
+}

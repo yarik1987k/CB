@@ -1,0 +1,60 @@
+{
+    "name": "cardbookplatform",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "@devloco/react-scripts-wptheme": "^3.4.1-wp.1",
+        "@superfaceai/one-sdk": "^2.2.0",
+        "@testing-library/jest-dom": "^4.2.4",
+        "@testing-library/react": "^9.3.2",
+        "@testing-library/user-event": "^7.1.2",
+        "@types/react-image-crop": "^8.1.3",
+        "@wordpress/api-fetch": "^6.20.0",
+        "axios": "^1.2.2",
+        "axios-oauth-client": "^2.0.2",
+        "instagram-private-api": "^1.45.3",
+        "jwt-decode": "^3.1.2",
+        "node-sass": "^4.14.1",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "react-quill": "^2.0.0",
+        "react-router-dom": "^6.6.1",
+        "react-slick": "^0.29.0",
+        "react-svg": "^15.1.18",
+        "react-wp-api": "^0.1.0",
+        "reactjs-popup": "^2.0.5",
+        "twilio": "^4.7.2",
+        "wordpress-api-client": "^0.4.8",
+        "wpapi": "^1.2.2"
+    },
+    "scripts": {
+        "crabuild": "react-scripts build",
+        "craeject": "react-scripts eject",
+        "crastart": "react-scripts start",
+        "cratest": "react-scripts test",
+        "build": "wptheme-scripts build",
+        "start": "wptheme-scripts start",
+        "wpbuild": "wptheme-scripts wpbuild",
+        "wpstart": "wptheme-scripts wpstart"
+    },
+    "eslintConfig": {
+        "extends": "react-app"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "homepage": "/wp-content/themes/cardbookplatform",
+    "browserLaunchTo": "http://cardplat.local",
+    "devDependencies": {
+        "dataurl-to-blob": "^0.0.1"
+    }
+}

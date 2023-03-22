@@ -1,0 +1,124 @@
+.login{
+    &-btn{
+        background: linear-gradient(270.15deg, #7F53E6 0.13%, #9280DB 118.82%);
+        border-radius: 8px;
+        padding: 10px 20px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        border: none;
+        width: 100%;
+        color: #fff;
+        margin-top: 40px;
+    }
+    &-title{
+        text-align: center;
+        margin-bottom: 30px;
+        h1{
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 30px;
+            color: #FFFFFF;
+            margin: 0;
+            padding: 0;
+        }
+        p{
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.35);
+            margin: 0;
+            padding: 0;
+            padding-top: 12px;
+        }
+    }
+    &-form{
+        .form-group{
+            margin-bottom: 15px;
+            .login-btn{
+                cursor: pointer;
+            }
+            input{
+                padding: 20px;
+                color: #FFFFFF;
+                background:#1C1933;
+                border-radius: 8px;
+                border: none;
+                width: 100%;
+                &:focus-visible{
+                    outline: none;
+                }
+                &::placeholder{
+                    color: rgba(255, 255, 255, 0.4);
+                }
+            }
+            .password{
+                display: flex;
+                justify-content: space-between;
+                gap: 10px;
+                .show-hide-pass{
+                    background: #37295A;
+                    border-radius: 10px;
+                    width: 55px;
+                    height: 55px;
+                    border: none;
+                    cursor: pointer;
+                    &.active{
+                        background: #564584;
+                        svg{
+                            path{
+                                fill: #2ED47A;
+                            }
+                        }
+                    }
+                }
+            }
+            .remmber-me{
+                padding-left: 14px;
+                label{
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 21px;
+                    color: #fff;
+                    cursor: pointer;
+                    span{
+                        padding-left: 14px;
+                    }
+                }
+                input[type="checkbox"] {
+                    appearance: none;
+                    background-color: #fff;
+                    margin: 0;
+                    font: inherit;
+                    color: currentColor;
+                    width: 16px;
+                    height: 16px;
+                    border: 1px solid black;
+                    border-radius: 4px;
+                    transform: translateY(-0.075em);
+                    display: inline-grid;
+                    place-content: center;
+                    padding: 0;
+                    &::before{
+                        content: "";
+                        width: 10px;
+                        height: 10px;
+                        
+                        opacity: 0;
+                        transition: all ease-in-out 0.3s;
+                        box-shadow: inset 1em 1em #190C2B;
+                        transform-origin: center;
+                        clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+                    }
+                    &:checked{
+                        &::before{
+                           opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

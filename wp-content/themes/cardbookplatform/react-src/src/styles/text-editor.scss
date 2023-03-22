@@ -1,0 +1,32 @@
+.text-editor{
+    .quill {
+        background: #291E47;
+        border-radius: 11.1398px;
+        .ql-toolbar{
+            &.ql-snow{
+                border:none;
+                 .ql-stroke{
+                    stroke: rgba(255, 255, 255, 0.25);
+                 }
+                .ql-formats{
+                    .ql-picker{
+                        &-label{
+                            color:rgba(255, 255, 255, 0.25);
+                        }
+                        .ql-stroke{
+                            fill: rgba(255, 255, 255, 0.25);
+                            stroke: rgba(255, 255, 255, 0.25);
+                        }
+                    }
+                }
+            }
+        }
+        .ql-container{
+            &.ql-snow{
+                border:none;
+                min-height: 160px;
+            }
+        }
+    }
+
+}

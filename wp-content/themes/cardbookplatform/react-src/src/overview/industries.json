@@ -1,0 +1,87 @@
+[
+    {
+        "id": 1,
+        "name": "Retail / Trade",
+        "type": "industry"
+    },
+    {
+        "id": 2,
+        "name": "Industry",
+        "type": "industry"
+    },
+    {
+        "id": 3,
+        "name": "Hotel and restaurant business",
+        "type": "industry"
+    },
+    {
+        "id": 4,
+        "name": "Real estate and development",
+        "type": "industry"
+    },
+    {
+        "id": 5,
+        "name": "State and municipal administration",
+        "type": "industry"
+    },
+    {
+        "id": 6,
+        "name": "IT, Internet, Digital",
+        "type": "industry"
+    },
+    {
+        "id": 7,
+        "name": "Fashion and Beauty industry",
+        "type": "industry"
+    },
+    {
+        "id": 8,
+        "name": "Arts and Entertainment",
+        "type": "industry"
+    },
+    {
+        "id": 9,
+        "name": "Marketing",
+        "type": "industry"
+    },
+    {
+        "id": 10,
+        "name": "Media, communications and media",
+        "type": "industry"
+    },
+    {
+        "id": 11,
+        "name": "Education",
+        "type": "industry"
+    },
+    {
+        "id": 12,
+        "name": "The medicine",
+        "type": "industry"
+    },
+    {
+        "id": 13,
+        "name": "Diversified holding",
+        "type": "industry"
+    },
+    {
+        "id": 14,
+        "name": "Tourism and travel",
+        "type": "industry"
+    },
+    {
+        "id": 15,
+        "name": "Electronic commerce",
+        "type": "industry"
+    },
+    {
+        "id": 16,
+        "name": "Finance (Banks / Insurance / Investments)",
+        "type": "industry"
+    },
+    {
+        "id": 17,
+        "name": "Private equity and venture investments",
+        "type": "industry"
+    }
+]

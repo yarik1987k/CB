@@ -1,0 +1,137 @@
+.overview-block{
+    width: 1102px;
+    .profile-bar{
+        border-radius: 8px;
+        padding: 25px 28px;
+        background: linear-gradient(270deg, #2C4B4F 0%, #2D2825 50%, #332B3C 100%);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .profile-image{
+            figure{
+                width: 60px;
+                height: 60px;
+                border-radius: 100%;
+                border: 2px solid #FFFFFF;
+                background: #261D3B;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin:0;
+                padding:0;
+                margin-right:22px;
+            }
+        }
+        .profile-content{
+            h1{
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 30px;
+                margin:0;
+                padding: 0;
+                color: #FFFFFF;
+            }
+            p{
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 18px;
+                color: #FFFFFF;
+                margin:0;
+                padding: 0;
+                padding-top:6px;
+            }
+        }
+        &-holder{
+            display: flex;
+            align-items: center;
+        }
+
+        &-info{
+            display: flex;
+            align-items: center;
+            .my-balance{
+                color:#FFFFFF;
+                background: rgba(0, 0, 0, 0.08);
+                border-radius: 8px;
+                display: flex;
+                padding: 20px;
+                align-items: center;
+                margin-right: 16px;
+                .currency{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 2.18984px;
+                    gap: 7.3px; 
+                    width: 34px;
+                    height: 34px;
+                    background: rgba(0, 0, 0, 0.08);
+                    border-radius: 7.29947px;
+                    font-size: 25px;
+                    margin-right: 17px;
+                }
+
+                .balance{
+                    .current-balance{
+                        font-weight: 600;
+                        font-size: 18px;
+                        line-height: 27px;
+                        text-align: right;
+                        p{
+                            margin:0;
+                            padding:0;
+                            font-weight: 500;
+                            font-size: 12px;
+                            line-height: 18px;
+                        }
+                    }
+                }
+            }
+            .my-subscription{
+                color:#FFFFFF;
+                background: rgba(0, 0, 0, 0.08);
+                border-radius: 8px;
+                display: flex;
+                padding: 20px;
+                align-items: center;
+
+                .icon{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 2.18984px;
+                    grid-gap: 7.3px;
+                    gap: 7.3px;
+                    width: 34px;
+                    height: 34px;
+                    background: rgba(0, 0, 0, 0.08);
+                    border-radius: 7.29947px;
+                    font-size: 25px;
+                    margin-right: 17px;
+                    figure{
+                        margin:0;
+                        padding: 0;
+                    }
+                }
+                .current-subscription{
+                    text-align: right;
+                    span{
+                        font-weight: 600;
+                        font-size: 18px;
+                        line-height: 27px;
+                        text-align: right;
+                    }
+                    p{
+                        margin: 0;
+                        padding: 0;
+                        font-weight: 500;
+                        font-size: 12px;
+                        line-height: 18px;
+                    }
+                }
+            }
+        }
+    }
+}

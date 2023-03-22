@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "name": "Business",
+        "type": "interest"
+    },
+    {
+        "id": 2,
+        "name": "Finance and Economics",
+        "type": "interest"
+    },
+    {
+        "id": 3,
+        "name": "Success stories",
+        "type": "interest"
+    },
+    {
+        "id": 4,
+        "name": "Interview",
+        "type": "interest"
+    },
+    {
+        "id": 5,
+        "name": "Update",
+        "type": "interest"
+    }
+]

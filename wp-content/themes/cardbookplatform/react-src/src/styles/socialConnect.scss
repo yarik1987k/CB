@@ -1,0 +1,177 @@
+.social-select{
+    position: relative;
+    ul{
+        list-style: none;
+        margin: 0;
+        padding:0;
+        background: #291E47;
+        border-radius: 8px;
+        li{
+            background: #291E47;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 10px 0px 10px 10px;
+            gap: 5px;
+            button{
+                font-family: 'Poppins';
+                background: transparent;
+                border: none;
+                padding: 0;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 14px;
+                color: #FFFFFF;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                cursor: pointer;
+                span{
+                    border-left: 1px solid #3F3069;
+                    padding-left: 10px;
+                }
+            }
+        }
+    }
+    &-active-item{
+        display: flex;
+        ul{
+            width: 300px;
+            margin-right: 14px;
+        }
+        .item{
+            width: 100%;
+            position: relative;
+        }
+        button{
+            width: 100%;
+        }
+        .state-icon{
+            position: absolute;
+            right:15px;
+        }
+    }
+    &-items{
+        width: 300px;
+        position: absolute;
+        margin-top:14px;
+        opacity: 0;
+        pointer-events: none;
+        transition: all ease-in-out 0.3s;
+
+        &.active{
+            opacity: 1;
+            pointer-events: initial;
+            transition: all ease-in-out 0.3s;
+        }
+    }
+
+}
+.facebook-connect{
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 15px;
+    color: #FFFFFF;
+    background: #1877F2;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px;
+    gap: 8px;
+    width: 199px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    max-width: 200px;
+}
+.instagram-connect{
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 15px;
+    color: #FFFFFF;
+    background: #f09433; 
+background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px;
+    gap: 8px;
+    width: 199px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    max-width: 200px;
+}
+
+.social-connect{
+    &__connected{
+        margin-top:14px;
+        .connected-item{
+            background: #302452;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 6px 0px 6px 10px;
+            gap: 10px;
+            width: 245px;
+            height: 51px;
+            button{
+                background: transparent;
+                padding:0;
+                border:none;
+                cursor: pointer;
+            }
+            figure{
+                width:38px;
+                height:38px;
+                overflow: hidden;
+                border-radius: 4px;
+                margin: 0;
+                img{
+                    object-fit: cover;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            h5{
+                a{
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 21px;
+                    text-decoration-line: underline;
+                    color: #FFFFFF;
+                }
+                
+            }
+            i{
+                background: #3B2E60;
+                border-radius: 2px;
+                width: 18px;
+                height: 18px;
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 4px;
+                svg{
+                    width: 14px;
+                    height: 14px;
+                }
+
+            }
+        }
+    }
+}

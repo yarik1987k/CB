@@ -1,0 +1,46 @@
+.tabs{
+    &-header{
+        background: #4D3F70;
+        border-radius: 6px;
+        padding: 6px;
+        ul{
+            list-style: none;
+            margin:0;
+            padding:0;
+            display: inline-flex;
+            justify-content: space-between;
+            width: 100%;
+            li{
+                button{
+                    width:220px;
+                    height:32px;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 13px;
+                    line-height: 20px;
+                    color: #7F71A5;
+                    background:transparent;
+                    border-radius: 6px;
+                    font-family: 'Poppins', sans-serif;
+                    border: none;
+                    cursor: pointer;
+                    &.active{
+                        color: #271D43;
+                        background: #FFFFFF;
+                    }
+                }
+            }
+        }
+    }
+    &-content{
+        .tab-pane{
+            display: none;
+            .loading_animation{
+                min-height: 500px;
+            }
+            &.active{
+                display: block;
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+{
+  "files": {
+    "static/js/1.chunk.js": "/wp-content/themes/cardbookplatform/static/js/1.chunk.js",
+    "static/js/1.chunk.js.map": "/wp-content/themes/cardbookplatform/static/js/1.chunk.js.map",
+    "main.css": "/wp-content/themes/cardbookplatform/static/css/main.chunk.css",
+    "main.js": "/wp-content/themes/cardbookplatform/static/js/main.chunk.js",
+    "main.css.map": "/wp-content/themes/cardbookplatform/static/css/main.chunk.css.map",
+    "main.js.map": "/wp-content/themes/cardbookplatform/static/js/main.chunk.js.map",
+    "runtime-main.js": "/wp-content/themes/cardbookplatform/static/js/bundle.js",
+    "runtime-main.js.map": "/wp-content/themes/cardbookplatform/static/js/bundle.js.map",
+    "index.php": "/wp-content/themes/cardbookplatform/index.php",
+    "static/media/index.scss": "/wp-content/themes/cardbookplatform/static/media/cradBg.069cf4b8.png",
+    "static/media/demo-cover.png": "/wp-content/themes/cardbookplatform/static/media/demo-cover.f3b111c9.png",
+    "static/media/popup-image.png": "/wp-content/themes/cardbookplatform/static/media/popup-image.e97a420a.png"
+  },
+  "entrypoints": [
+    "static/js/bundle.js",
+    "static/js/1.chunk.js",
+    "static/css/main.chunk.css",
+    "static/js/main.chunk.js"
+  ]
+}

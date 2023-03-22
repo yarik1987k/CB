@@ -1,0 +1,50 @@
+.alert-notification{
+    background: #1C103C;
+    border-radius: 14px;
+
+    width: 396px;
+    height: 92px;
+    position: fixed;
+    left: 20px;
+    bottom: 50px;
+    z-index: 999;
+    &__inner{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 24px 16px;
+        gap: 16px; 
+        justify-content: space-between;
+    }
+    .icon{
+        margin-right:20px;
+    }
+    .text{
+        display: flex;
+        &-inner{
+            text-align: left;
+            h3{
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                color: #FFFFFF;
+                margin:0;
+                padding:0;
+            }
+            p{
+                font-style: normal;
+                font-weight: 500;
+                font-size: 13px;
+                line-height: 20px;
+                color: #FFFFFF;
+                margin:0;
+                padding:0;
+            }
+        }
+        
+    }
+    .close-btn{
+
+    }
+}

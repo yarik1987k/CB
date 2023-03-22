@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+  font-family: 'Poppins', sans-serif;
+  background: #291E47;
+  margin: 0;
+}
+.main-grid{
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+}
+textarea{
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.sidebar-navigation{
+  $self : &;
+  width:258px;
+  position: relative;
+  ul{
+    list-style: none;
+    margin:0;
+    padding:0;
+    width:150px;
+    height: 100%;
+
+    li{
+      margin-bottom: 40px;
+      a{
+        color:#fff;
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.6);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 26px;
+        display: inline-flex;
+        align-items: center;
+        svg{
+          margin-right: 10px;
+        }
+      }
+      &.active{
+        a{
+          path{
+            fill-opacity: 1;
+          }
+        }
+      }
+    }
+  }
+  &.edit-nav{
+    ul{
+      width: 53px;
+      background: linear-gradient(176.02deg, #342952 0.33%, #382A5C 95.4%), #FFFFFF;
+      text-align: center;
+      padding-top:24px;
+      height:100%;
+      li{
+        a{
+          svg{
+            margin-right:0;
+          }
+          span{
+            display:none;
+          }
+        }
+      }
+    }
+    #{$self}__sub{
+      width: 204px;
+      position: absolute;
+      top: 0;
+      left: 53px;
+      padding-top: 24px;
+      border-right: 1.5px solid #564C6E;
+      background: #291E47;
+      box-shadow: 9px 0px 14px rgba(0, 0, 0, 0.21);
+      height:100%;
+      h3{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 25px;
+        color:#fff;
+        text-align: center;
+        margin:0;
+        padding-bottom: 6px;
+      }
+      ul{
+        width: 100%;
+        text-align: left;
+        background: transparent;
+        height:100%;
+        li{
+          padding:11px 30px;
+          margin:0;
+          display: flex;
+          align-items: center;
+          a{
+            svg{
+              margin-right: 10px;
+            }
+            span{ 
+              font-style: normal;
+              font-weight: 400;
+              font-size: 13px;
+              line-height: 20px;
+              color: #FFFFFF;
+              display: initial;
+            }
+          }
+          &.active{
+            background: #3F3068;
+            a{
+              span{
+                font-weight: 500;
+              }
+              svg{
+                path{
+                  fill: #FFFFFF;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.loading_animation{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.lds-ripple{
+  display: inline-block;
+  position: relative;
+  width: 50px;
+  height: 50px;
+
+  div{
+      position: absolute;
+      border: 4px solid #fff;
+      opacity: 1;
+      border-radius: 50%;
+      animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+
+      &:nth-child(2){
+          animation-delay: -0.5s;
+      }
+  }
+  @keyframes lds-ripple {
+      0% {
+        top: 26px;
+        left: 26px;
+        width: 0;
+        height: 0;
+        opacity: 0;
+      }
+      4.9% {
+        top: 26px;
+        left: 26px;
+        width: 0;
+        height: 0;
+        opacity: 0;
+      }
+      5% {
+        top: 26px;
+        left: 26px;
+        width: 0;
+        height: 0;
+        opacity: 1;
+      }
+      100% {
+        top: 0px;
+        left: 0px;
+        width: 52px;
+        height: 52px;
+        opacity: 0;
+      }
+    }
+}
+@import './styles/cardmarket.scss';
+@import './styles/haveAccessCard.scss';
+@import './styles/alerts.scss';
+@import './styles/profile-edit.scss';
+@import './styles/select.scss';
+@import './styles/text-editor.scss';
+@import './styles/socialConnect.scss'
